@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ItP-Z4-wwm">
+            <objects>
+                <viewController storyboardIdentifier="help" id="paM-0U-Bh2" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QDf-mt-zYK">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How To Use The App" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="OyJ-VR-cIT">
+                                <rect key="frame" x="50" y="102" width="315" height="101"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="101" id="axx-Bl-SjD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="28"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7X-Z9-Qxz">
+                                <rect key="frame" x="0.0" y="20" width="66" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="66" id="cnG-uv-Cf6"/>
+                                    <constraint firstAttribute="height" constant="56" id="kSm-LM-XzD"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="FcQ-Gz-gQX" kind="unwind" unwindAction="dismissVCWithSegue:" id="9c2-eA-T6d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="P0S-FW-bfP">
+                                <rect key="frame" x="50" y="345" width="315" height="269"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="225" id="kOa-gc-ALe"/>
+                                </constraints>
+                                <string key="text">This is the navigation controller items created on the xcode whike taking the udemy course so how does the things change are experimneted here , the app is created during the bill splittter time</string>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSO-Vq-3Fc">
+                                <rect key="frame" x="0.0" y="667" width="414" height="69"/>
+                                <color key="backgroundColor" red="0.33655693549999999" green="0.52572712700000002" blue="0.70802299219999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="10r-LO-hUb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="30"/>
+                                <state key="normal" title="Next">
+                                    <color key="titleColor" systemColor="secondarySystemGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="b3h-AQ-y7a"/>
+                        <color key="backgroundColor" red="0.38456173230000001" green="0.65061596060000004" blue="0.91586382769999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bSO-Vq-3Fc" firstAttribute="trailing" secondItem="b3h-AQ-y7a" secondAttribute="trailing" id="2vS-9y-Zc0"/>
+                            <constraint firstItem="OyJ-VR-cIT" firstAttribute="top" secondItem="e7X-Z9-Qxz" secondAttribute="bottom" constant="26" id="8cN-bO-krP"/>
+                            <constraint firstItem="OyJ-VR-cIT" firstAttribute="leading" secondItem="b3h-AQ-y7a" secondAttribute="leading" constant="50" id="FJc-8T-Iz6"/>
+                            <constraint firstItem="e7X-Z9-Qxz" firstAttribute="top" secondItem="b3h-AQ-y7a" secondAttribute="top" constant="20" id="SrX-E1-0ap"/>
+                            <constraint firstItem="bSO-Vq-3Fc" firstAttribute="top" secondItem="P0S-FW-bfP" secondAttribute="bottom" constant="53" id="T3Z-Ix-8D7"/>
+                            <constraint firstItem="e7X-Z9-Qxz" firstAttribute="leading" secondItem="b3h-AQ-y7a" secondAttribute="leading" id="U8I-sO-y81"/>
+                            <constraint firstItem="b3h-AQ-y7a" firstAttribute="trailing" secondItem="OyJ-VR-cIT" secondAttribute="trailing" constant="49" id="VhS-MZ-StQ"/>
+                            <constraint firstItem="P0S-FW-bfP" firstAttribute="leading" secondItem="b3h-AQ-y7a" secondAttribute="leading" constant="50" id="ZSa-rX-366"/>
+                            <constraint firstItem="bSO-Vq-3Fc" firstAttribute="bottom" secondItem="b3h-AQ-y7a" secondAttribute="bottom" id="bDT-oY-Bv4"/>
+                            <constraint firstItem="P0S-FW-bfP" firstAttribute="top" secondItem="OyJ-VR-cIT" secondAttribute="bottom" constant="142" id="dBg-KC-0x9"/>
+                            <constraint firstItem="bSO-Vq-3Fc" firstAttribute="leading" secondItem="b3h-AQ-y7a" secondAttribute="leading" id="plt-un-w3S"/>
+                            <constraint firstItem="b3h-AQ-y7a" firstAttribute="trailing" secondItem="P0S-FW-bfP" secondAttribute="trailing" constant="49" id="rxW-tm-cVA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="kr7-m4-zLx"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ryu-9Z-s7m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="FcQ-Gz-gQX" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="356.52173913043481" y="-1242.3913043478262"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

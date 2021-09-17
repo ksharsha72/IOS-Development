@@ -1,0 +1,58 @@
+//
+//  AppDelegate.swift
+//  Florists
+//
+//  Created by Sriharsha on 24/07/21.
+//
+
+import UIKit
+
+@main
+class AppDelegate: UIResponder, UIApplicationDelegate {
+
+
+
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        
+        print("this is were the app runs")
+        // Override point for customization after application launch.
+        return true
+    }
+
+    // MARK: UISceneSession Lifecycle
+
+    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
+        // Called when a new scene session is being created.
+        // Use this method to select a configuration to create the new scene with.
+        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
+    }
+
+    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
+        // Called when the user discards a scene session.
+        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
+        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
+    }
+    
+    func applicationWillTerminate(_ application: UIApplication) {
+        print("the app has been terminated by the uses")
+    }
+    
+    func applicationDidEnterBackground(_ application: UIApplication) {
+        print("App is now in the background")
+    }
+    
+    func applicationDidBecomeActive(_ application: UIApplication) {
+        print("now the app is active again")
+    }
+    
+    func applicationWillEnterForeground(_ application: UIApplication) {
+        print("app will return to the foreground")
+    }
+    
+    func applicationWillResignActive(_ application: UIApplication) {
+        print("App is about to resign")
+    }
+
+
+}
+
